@@ -9,7 +9,7 @@ resource "azurerm_storage_account" "storage" {
      account_replication_type = "LRS"
      account_tier             = "Standard"
      tags = {
-        env = "Prod"
+        env = "DR"
         app = "Nginx"
      }
 
