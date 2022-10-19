@@ -7,6 +7,5 @@ resource "azurerm_storage_account" "storage" {
     resource_group_name = data.azurerm_resource_group.rg-existing.name
     location = data.azurerm_resource_group.rg-existing.location
      account_replication_type = "LRS"
-     account_tier             = "Standard
-   
+     account_tier             = "Standard"  
 }
