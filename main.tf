@@ -3,14 +3,10 @@ data "azurerm_resource_group" "rg-existing" {
 }
 
 resource "azurerm_storage_account" "storage" {
-    name = "traininglab202324"
+    name = "traininglab202324244"
     resource_group_name = data.azurerm_resource_group.rg-existing.name
     location = data.azurerm_resource_group.rg-existing.location
      account_replication_type = "LRS"
-     account_tier             = "Standard"
-     tags = {
-        env = "DR"
-        app = "Nginx"
-     }
-
+     account_tier             = "Standard
+   
 }
